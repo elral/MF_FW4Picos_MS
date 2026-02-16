@@ -1,4 +1,4 @@
-# Firmware for Pico Boards with Master/Slave operation
+# Upcoming Firmware for Pico Boards with Master/Slave operation
 
 ## General
 The **PicoMicroMS** is intended for a replacement of an Arduino ProMicro. It is based on the PicoMicro but has two additional connectors on board for setting up a chain.
