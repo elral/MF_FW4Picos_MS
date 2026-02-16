@@ -45,7 +45,7 @@ Connect the output of the master to the input of the first Slave. Continue the c
 ⚠️ Important: All cables must have a crossed wiring.
 
 ## Limitations 
-While this board is highly compatible, there are a few important differences:
+While this board is highly compatible with the Arduino ProMicro, there are a few important differences:
 
 1. **Analog Inputs**  
    - Only **A0 to A3** are available (4 total)  
