@@ -43,6 +43,8 @@ Connect the output of the master to the input of the first Slave. Continue the c
 
 ![image](Wiring_PicoMicro_MS.png)
 
+Symbols, Footprints and 3D models can be found in the KiCad Folder.
+
 ⚠️ Important: All cables must have a crossed wiring.
 
 ## Limitations 
