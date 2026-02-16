@@ -16,9 +16,10 @@ These Pins are not available for devices.
 ![image](PicoNano_top.png)
 ![image](PicoNano_bottom.png)
 
-All boards are coming with the latest release when purchased.
+All boards are coming with the latest release when purchased. Firmware updates can be done via the conector.
 
 ## Requirements
+* Download the latest released zip file and extract it into your Community folder inside your MobiFlight installation folder.
 * The first board in the chain is always the Master Board. This has to be connected via USB to the PC for normal operation.
 * All boards should be switched *ON* at the same time, so a common power supply for all boards is recommended.
 Nevertheless Master and Slaves are hotplug capable. After rebooting one, like updating the Firmware, the chain gets build up again automatically.
