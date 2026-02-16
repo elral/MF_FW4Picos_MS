@@ -28,14 +28,14 @@ Nevertheless Master and Slaves are hotplug capable. After rebooting one, like up
 * The configuration for the Master has to be uploaded without any connected Slave. Temporarily unplug the JST connector to the first Slave.
 * To upload a configuration to a Slave, connect him directly to USB and program this board with the Mobiflight connector. After uploading the configuration, close the "Setttings" Window and open it again to reload the configuration from the Master. It is **not** required to unpower the chain and to unplug the USB connection of the Master.
 * Each board must have it's own name, two or more boards should not have the same one.
-* All device names within the connector will have the boardname as first part included, separated to the device name by `-`. E.g. if an output shifter is named `OSH1` on the board named `ADIRS`, this will show up as `ADIRS-OSH1` when the Connector reads the configuration from the Master board. If this board is connected via USB, single or chained, the device name shows up as `OSH1` on the board named `ADIRS`. So during configuration of the board config do **not** add ths board name, this is done automatically if the board is daisy chained.
 
 ## Features
 * A succesfull build up chain will be signalized with two Onboard LED's. Both LED's are located near the respective JST connector. If the LED lights up, a connection on this serial line is established. 
 The LED near the output connector indicates that this board is a Slave. When the LED near the connector to a Slave lights up, another Slave in the chain is detected. For the last Slave in the chain this LED will not light up.
 Same applies for the LED near the input connector, if this LED lights up a connection to a Master is established.
 * All devices from the Master and all Slaves will shown up in the Mobiflight connector as if they are from the Master. To keep the overview which device belongs to which board, the boardname will be the prefix of each device.
-Example: If a board is named "ELEC", and on this board an inputshifter is named "InShifter1", this device will show up with the name "ELEC-InShifter1". This helps to keep the overview when multiple boards are in the chain especially when a device name is identical in some Slaves.
+Example: If a board is named `ELEC`, and on this board an inputshifter is named `InShifter1`, this device will show up with the name `ELEC-InShifter1`. This helps to keep the overview when multiple boards are in the chain especially when a device name is identical in some Slaves.
+If this board is connected via USB, single or daisy chained, the device name shows up as `InShifter1` on the board named `ELEC`. So during configuration of the board config do **not** add the board name, this is done automatically if the board is daisy chained.
 
 (Remark: PicoNano does not have these LEDs to have most pins as I/Os available)
 
