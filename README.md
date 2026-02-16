@@ -1,7 +1,7 @@
 # Firmware for Pico Boards with Master/Slave operation
 
 ## General
-The PicoMicro/MS is intended for a replacement of an Arduino ProMicro. It is based on the PicoMicro but has two additional connectors on board for setting up a chain.
+The **PicoMicroMS** is intended for a replacement of an Arduino ProMicro. It is based on the PicoMicro but has two additional connectors on board for setting up a chain.
 In the Master/Slave version two additional JST-SH connectors and two LED's are placed on the board.
 These connectors are foreseen two daisy chain up to 16 boards. Only the first board in the chain, called Master, has to be connected to USB. All other daisy chained boards are called Slaves and don't need a USB connection for normal operation.
 Each device from a Slave will also show up as a device in the Master.
@@ -9,7 +9,7 @@ Each device from a Slave will also show up as a device in the Master.
 ![image](PicoMicro_MS_top.png)
 ![image](PicoMicro_MS_bottom.png)
 
-The PicoNano can also be used with Master/Slave firmware which is part of the releases. The additional two connectors must be placed by yourself on yout board design.
+The **PicoNano** (planed) can also be used with Master/Slave firmware which is part of the releases. The additional two connectors must be placed by yourself on yout board design.
 Both connectors are two pin connectors. Connector for connection to Master uses Pin `0` for TX and Pin `1` for RX, for connection to Slave Pin `24` for TX and Pin `25` for RX.
 These Pins are not available for devices.
 
