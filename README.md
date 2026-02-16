@@ -41,4 +41,37 @@ Connect the output of the master to the input of the first Slave. Continue the c
 ⚠️ Important: All cables must have a crossed wiring.
 
 ## Limitations 
-The same limitations as for the PicoMicro[Hyperlink2PicoMicro] apply for this board
+While this board is highly compatible, there are a few important differences:
+
+1. **Analog Inputs**  
+   - Only **A0 to A3** are available (4 total)  
+   - Other analog pins present on the Pro Micro are not supported  
+
+2. **5V Output (Pin 21)**  
+   - On the Arduino Pro Micro, Pin 21 outputs **5V**  
+   - On this board, Pin 21 outputs **3.3V**  
+
+3. **MAX7219 & 5V Requirement**  
+   - The MAX7219 driver must still be powered with **5V**  
+   - Therefore, an **external 5V source** is required, or you can use **Pin 24 (Vin)**, which provides 5V directly from the USB connector  
+
+4. **Level Shifting for MAX7219**  
+   - The MAX7219 requires **5V logic levels**  
+   - Use a **level shifter** between the PicoMicro board (3.3V signals) and the MAX7219 inputs
+   - Alternative supply the MAX7219 via a diode with 5V. This reduces the supply voltage to ~4.4V and the logic levels of 3.3V are within the required 70% of supply voltage
+
+5. **Bootloader Button**  
+   - The board includes a **dedicated BOOT button** to enter USB mass storage boot mode (for firmware flashing).
+
+## 📊 PicoMicro vs. Arduino Pro Micro (ATmega32U4)
+
+| Feature  | PicoMicro ProMicro                          | Arduino Pro Micro (ATmega32U4) |
+|----------|-------------------------------------------|--------------------------------|
+| MCU      | Dual-core ARM Cortex-M33 @ up to 150 MHz, FPU, DSP | 8-bit AVR @ 16 MHz |
+| Flash    | Up to 16 MB QSPI (typ. 2–8 MB onboard)    | 32 KB |
+| RAM      | 512 KB                                    | 2.5 KB |
+| USB      | Native USB 2.0 FS/HS, multiple device classes | Native USB 2.0 FS (limited) |
+| I/O      | **3.3 V logic, 5 V-tolerant pins**        | 5 V I/O (native) |
+| Analog   | 4 (A0–A3 only)                            | 12 (depending on variant) |
+| Extra HW | 2× PIO, Crypto engine, more UART/SPI/I²C | – |
+| Power    | Low-power modes, efficient ARM design     | Limited power saving |
