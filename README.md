@@ -51,12 +51,12 @@ Symbols, Footprints and 3D models can be found in the KiCad Folder.
 While this board is highly compatible with the Arduino ProMicro, there are a few important differences:
 
 1. **Analog Inputs**  
-   - Only **A0 to A3** are available (4 total)  
-   - Other analog pins present on the Pro Micro are not supported  
+   - Only **A0 to A3** are available (4 total) for the PicoMicro. Other analog pins present on the Pro Micro are not supported.
+   - **A0 to A3** are available (4 total) for the PicoMicro. 
 
 2. **5V Output (Pin 21)**  
    - On the Arduino Pro Micro, Pin 21 outputs **5V**  
-   - On this board, Pin 21 outputs **3.3V**  
+   - On PicoMicro Pin 21 and on PicoNano Pin 33 outputs **3.3V**
 
 3. **MAX7219 & 5V Requirement**  
    - The MAX7219 driver must still be powered with **5V**  
@@ -68,7 +68,8 @@ While this board is highly compatible with the Arduino ProMicro, there are a few
    - Alternative supply the MAX7219 via a diode with 5V. This reduces the supply voltage to ~4.4V and the logic levels of 3.3V are within the required 70% of supply voltage
 
 5. **Bootloader Button**  
-   - The board includes a **dedicated BOOT button** to enter USB mass storage boot mode (for firmware flashing).
+   - The boards includes a **dedicated BOOT button** to enter USB mass storage boot mode (for firmware flashing) on powering up the board.
+   - PicoNano includes a **RESET Button** which resets the board. If also the BOOT button is pressed USB mass storage boot mode is entered.
 
 ## 📊 PicoMicro vs. Arduino Pro Micro (ATmega32U4)
 
