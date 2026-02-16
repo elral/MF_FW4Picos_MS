@@ -27,6 +27,8 @@ Nevertheless Master and Slaves are hotplug capable. After rebooting one, like up
 ## Restrictions
 * The configuration for the Master has to be uploaded without any connected Slave. Temporarily unplug the JST connector to the first Slave.
 * To upload a configuration to a Slave, connect him directly to USB and program this board with the Mobiflight connector. After uploading the configuration, close the "Setttings" Window and open it again to reload the configuration from the Master. It is **not** required to unpower the chain and to unplug the USB connection of the Master.
+* Each board must have it's own name, two or more boards should not have the same one.
+* All device names within the connector will have the boardname as fitst part included, separated to the device name by `-`. E.g. if an output shifter is named `OSH1` on the board named `ADIRS`, this will show up as `ADIRS-OSH1` when the Connector reads the configuration from the Master board.
 
 ## Features
 * A succesfull build up chain will be signalized with two Onboard LED's. Both LED's are located near the respective JST connector. If the LED lights up, a connection on this serial line is established. 
