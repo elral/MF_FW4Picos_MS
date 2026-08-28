@@ -9,14 +9,12 @@ Each device from a Slave will also show up as a device in the Master.
 ![image](PicoMicro_MS_top.png)
 ![image](PicoMicro_MS_bottom.png)
 
-The **PicoNano** (planed) can also be used with Master/Slave firmware which is part of the releases. The additional two connectors must be placed by yourself on your board design.
-Both connectors are two pin connectors. Connector for connection to Master uses Pin `0` for TX and Pin `1` for RX, for connection to Slave Pin `24` for TX and Pin `25` for RX.
-These Pins are not available for devices.
+The **PicoNano** can also be used with Master/Slave firmware which is part of the releases. The additional two connectors are also placed on the board like for the ProMicroMS.
 
 ![image](PicoNano_top.png)
 ![image](PicoNano_bottom.png)
 
-All boards are coming with the latest release when purchased. Firmware updates can be done via the connector.
+All boards are coming with the latest FW release when purchased. Firmware updates can be done via the connector.
 
 ## Requirements
 * Download the latest released zip file and extract it into your Community folder inside your MobiFlight installation folder.
@@ -37,13 +35,10 @@ Same applies for the LED near the input connector, if this LED lights up a conne
 Example: If a board is named `ELEC`, and on this board an inputshifter is named `InShifter1`, this device will show up with the name `ELEC-InShifter1`. This helps to keep the overview when multiple boards are in the chain especially when a device name is identical in some Slaves.
 If this board is connected via USB, single or daisy chained, the device name shows up as `InShifter1` on the board named `ELEC`. So during configuration of the board config do **not** add the board name, this is done automatically if the board is daisy chained.
 
-(Remark: PicoNano does not have these LEDs to have most pins as I/Os available)
 
 ## Wiring
 To daisy chain all boards, first define which board is the Master. It is a good idea to have a separate Master without any config uploaded. As this board does not have any configured device it's not needed to unplug the connection and reboot the board for uploading or changing the configuration. Name this board before setting up the chain to an appropiate name which reflects all Slave, e.g. "OVHD" for an overhead Panel or "PED" for pedestal.
 Connect the output of the master to the input of the first Slave. Continue the chain by connecting the output of the first slave to the input of the next slave, and so on. On the last board no cable is connected to the Output.
-
-![image](Wiring_PicoMicro_MS.png)
 
 Symbols, Footprints and 3D models can be found in the KiCad Folder.
 
@@ -53,8 +48,8 @@ Symbols, Footprints and 3D models can be found in the KiCad Folder.
 While this board is highly compatible with the Arduino ProMicro, there are a few important differences:
 
 1. **Analog Inputs**  
-   - Only **A0 to A3** are available (4 total) for the PicoMicro. Other analog pins present on the Pro Micro are not supported.
-   - **A0 to A3** are available (4 total) for the PicoMicro. 
+   - Only **A0 to A3** are available (4 total) for the PicoMicroMS. Other analog pins present on the Pro Micro are not supported. Same applies to the PicoNanoMS.
+   - **A0 to A3** are available (4 total) for the PicoMicroMS and PicoNanoMS. 
 
 2. **5V Output (Pin 21)**  
    - On the Arduino Pro Micro, Pin 21 outputs **5V**  
@@ -71,7 +66,6 @@ While this board is highly compatible with the Arduino ProMicro, there are a few
 
 5. **Bootloader Button**  
    - The boards includes a **dedicated BOOT button** to enter USB mass storage boot mode (for firmware flashing) on powering up the board.
-   - PicoNano includes a **RESET Button** which resets the board. If also the BOOT button is pressed USB mass storage boot mode is entered.
 
 ## 📊 PicoMicro vs. Arduino Pro Micro (ATmega32U4)
 

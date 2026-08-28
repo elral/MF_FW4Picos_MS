@@ -2,14 +2,14 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "PicoMicro"
+	(symbol "PicoNano_MS"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
-			(at -5.08 1.27 0)
+			(at -2.54 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28,8 +28,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Own_Library:PicoMicro"
-			(at 0 0 0)
+		(property "Footprint" "Own_Library:PicoNano_MS"
+			(at 2.54 5.842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -61,23 +61,21 @@
 				)
 			)
 		)
-		(symbol "PicoMicro_0_1"
-			(polyline
-				(pts
-					(xy -16.51 14.986) (xy -16.51 -17.526) (xy 15.24 -17.526) (xy 15.24 14.986) (xy -16.51 14.986)
-				)
+		(symbol "PicoNano_MS_1_1"
+			(rectangle
+				(start -13.97 22.86)
+				(end 13.97 -17.78)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 255 255 194 1)
 				)
 			)
-		)
-		(symbol "PicoMicro_1_1"
-			(text "PicoMicro"
-				(at -0.254 -5.08 0)
+			(text "PicoNano"
+				(at 0.762 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -85,9 +83,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 12.7 0)
+				(at -16.51 20.32 0)
 				(length 2.54)
-				(name "1(PWM)/TX"
+				(name "D0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -103,9 +101,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 10.16 0)
+				(at -16.51 17.78 0)
 				(length 2.54)
-				(name "0(PWM)/RX"
+				(name "D1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -120,10 +118,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -19.05 7.62 0)
+			(pin bidirectional line
+				(at -16.51 15.24 0)
 				(length 2.54)
-				(name "GND"
+				(name "D2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -138,10 +136,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -19.05 5.08 0)
+			(pin bidirectional line
+				(at -16.51 12.7 0)
 				(length 2.54)
-				(name "GND"
+				(name "D3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -157,9 +155,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 2.54 0)
+				(at -16.51 10.16 0)
 				(length 2.54)
-				(name "2(PWM)/SDA"
+				(name "D4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -175,9 +173,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 0 0)
+				(at -16.51 7.62 0)
 				(length 2.54)
-				(name "3(PWM)/SCL"
+				(name "D5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -193,9 +191,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 -2.54 0)
+				(at -16.51 5.08 0)
 				(length 2.54)
-				(name "4(PWM)"
+				(name "D6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -211,9 +209,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 -5.08 0)
+				(at -16.51 2.54 0)
 				(length 2.54)
-				(name "5(PWM)"
+				(name "D7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -229,9 +227,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 -7.62 0)
+				(at -16.51 0 0)
 				(length 2.54)
-				(name "6(PWM)"
+				(name "D8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -247,9 +245,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 -10.16 0)
+				(at -16.51 -2.54 0)
 				(length 2.54)
-				(name "7(PWM)"
+				(name "D9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -265,9 +263,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 -12.7 0)
+				(at -16.51 -5.08 0)
 				(length 2.54)
-				(name "8(PWM)"
+				(name "D10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -283,9 +281,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -19.05 -15.24 0)
+				(at -16.51 -7.62 0)
 				(length 2.54)
-				(name "9(PWM)"
+				(name "D11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -301,9 +299,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -15.24 180)
+				(at -16.51 -10.16 0)
 				(length 2.54)
-				(name "10(PWM)"
+				(name "D12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -318,10 +316,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 -12.7 180)
+			(pin power_in line
+				(at -16.51 -12.7 0)
 				(length 2.54)
-				(name "16(PWM)"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -336,10 +334,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 -10.16 180)
+			(pin power_in line
+				(at -16.51 -15.24 0)
 				(length 2.54)
-				(name "14(PWM)"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -354,10 +352,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 -7.62 180)
+			(pin power_in line
+				(at 16.51 -15.24 180)
 				(length 2.54)
-				(name "15"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -373,9 +371,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -5.08 180)
+				(at 16.51 -12.7 180)
 				(length 2.54)
-				(name "18(A0)"
+				(name "D13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -391,9 +389,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -2.54 180)
+				(at 16.51 -10.16 180)
 				(length 2.54)
-				(name "19(A1)"
+				(name "D14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -409,9 +407,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 0 180)
+				(at 16.51 -7.62 180)
 				(length 2.54)
-				(name "20(A2)"
+				(name "D15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -427,9 +425,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 2.54 180)
+				(at 16.51 -5.08 180)
 				(length 2.54)
-				(name "21(A3)"
+				(name "D22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -444,10 +442,10 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 17.78 5.08 180)
+			(pin bidirectional line
+				(at 16.51 -2.54 180)
 				(length 2.54)
-				(name "+3.3V"
+				(name "D23"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -462,10 +460,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at 17.78 7.62 180)
+			(pin bidirectional line
+				(at 16.51 0 180)
 				(length 2.54)
-				(name "RESET"
+				(name "D24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -480,10 +478,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 17.78 10.16 180)
+			(pin bidirectional line
+				(at 16.51 2.54 180)
 				(length 2.54)
-				(name "GND"
+				(name "D25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -498,8 +496,116 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 17.78 12.7 180)
+			(pin bidirectional line
+				(at 16.51 5.08 180)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 16.51 7.62 180)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 16.51 10.16 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 16.51 12.7 180)
+				(length 2.54)
+				(name "A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 16.51 15.24 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 16.51 17.78 180)
+				(length 2.54)
+				(name "3.3V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 16.51 20.32 180)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -508,7 +614,7 @@
 						)
 					)
 				)
-				(number "24"
+				(number "30"
 					(effects
 						(font
 							(size 1.27 1.27)
