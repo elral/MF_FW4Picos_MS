@@ -9,7 +9,7 @@ Each device from a Slave will also show up as a device in the Master.
 ![image](PicoMicro_MS_top.png)
 ![image](PicoMicro_MS_bottom.png)
 
-The **PicoNano** can also be used with Master/Slave firmware which is part of the releases. The additional two connectors are also placed on the board like for the ProMicroMS.
+The **PicoNanoMS** can also be used with Master/Slave firmware which is part of the releases. The additional two connectors are also placed on the board like for the ProMicroMS.
 
 ![image](PicoNano_top.png)
 ![image](PicoNano_bottom.png)
